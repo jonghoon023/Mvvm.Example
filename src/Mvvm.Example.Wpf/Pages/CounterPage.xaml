@@ -1,0 +1,23 @@
+<controls:ControlBase 
+    x:Class="Mvvm.Example.Wpf.Pages.CounterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:controls="clr-namespace:Mvvm.Example.Wpf.Controls"
+    mc:Ignorable="d" >
+    <StackPanel
+        Orientation="Vertical"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+        <TextBlock
+	        FontSize="40"
+	        VerticalAlignment="Center"
+	        HorizontalAlignment="Center"
+	        Text="{Binding Counter, Mode=OneWay}" />
+
+        <Button
+	        Content="Increment"
+	        Command="{Binding IncrementCommand, Mode=OneTime}" />
+    </StackPanel>
+</controls:ControlBase>

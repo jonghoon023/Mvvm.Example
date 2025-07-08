@@ -1,0 +1,14 @@
+<controls:ControlBase 
+    x:Class="Mvvm.Example.Wpf.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:controls="clr-namespace:Mvvm.Example.Wpf.Controls"
+    mc:Ignorable="d" >
+    <Button
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center"
+        Content="Go to counter page"
+        Command="{Binding NavigateToCounterPageCommand, Mode=OneTime}" />
+</controls:ControlBase>
